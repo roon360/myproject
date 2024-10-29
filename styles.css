@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:papayawhip;
+}
+
+.menu {
+    text-align: center;
+    background-color: green;
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu ul li {
+    width: 120px;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu ul li:hover {
+    background-color: darkgreen;
+    border-radius: 0;
+}
+
+.intro {
+    background-color: bisque;
+    
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+}
+.intro span{
+    color:rgb(211, 17, 17);
+    text-transform: capitalize;
+}@media (max-width: 768px) {
+    .intro, .image {
+        display: block; /* Stack them vertically */
+        width: 100%; /* Ensure they take full width */
+    }
+    .image img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+.btn{
+font-size: 14px;
+font-weight: bold;
+text-transform: uppercase;
+background-color: yellow;
+border-radius: 5px;
+transition:.42s ease
+}
+.btn:hover{
+color:white;
+background-color: black;
+
+}
+.row h4{
+    text-align: center;
+    border-bottom: 2px solid ;
+}
+.portfolio {
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imageslides{
+    
+}
+.imageslides .active{
+    display:block;
+}
+.image {
+    
+    width: 15%;
+    height: 35%;
+    right: 100px;
+    position: absolute;
+bottom:10px;
+top: 120px;
+
+
+}
+.image img{
+height:140%;
+
+
+
+
+}
+.image:hover .man{
+    left:55%;
+    
+}
+.benefits{
+    margin-top: 40px;
+    text-align: center;
+    color:olive
+}
+
+.row {
+    display: flex; /* Align columns horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.column {
+    width: 33%; /* Four columns */
+    margin: 10px; /* Space around each column */
+    height: 200px; /* Fixed height */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    padding: 20px; /* Add padding inside each column */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.column:hover {
+    background-color: black; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+.mySlides img{
+       width: 100%;
+    height: auto;
+    
+}/* General styles for the slideshow container */
+/* General styles for the slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidn; /* Hide overflow for slides */
+}
+
+/* Individual slide styles */
+.mySlides {
+    display: none; /* Hide slides by default */
+    width: 100%; /* Make slides responsive */
+}
+
+/* Add a fade transition effect */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.mySlides img {
+    animation: fade .51s; /* Adjust duration as needed */
+}
+.container{
+   height: 200px; 
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.contactleft{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.contacttitle h2{
+font-weight: 600;
+color: aqua;
+margin-bottom: 5px;
+font-size: 40px ;
+text-transform: uppercase;
+}
+
+.contactinput{
+    width:400px ;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+.btn{}
